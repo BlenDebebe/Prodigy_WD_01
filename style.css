@@ -11,6 +11,43 @@ body {
   background-color: #fdf6f0;
   color: #4e3d42;
   line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #3a2d2d;
+  color: #fdf6f0;
+}
+
+body.dark #navbar {
+  background-color: #2a1e1e;
+}
+
+body.dark #navbar.scrolled {
+  background-color: #3f2b2b;
+}
+
+body.dark .logo {
+  color: #fbe3d7;
+}
+
+body.dark .nav-menu li a {
+  color: #fdf6f0;
+}
+
+body.dark .nav-menu li a:hover {
+  background-color: #5c3a3a;
+  color: #ffdcd1;
+}
+
+body.dark .fashion-list li {
+  background-color: #503838;
+  color: #fdf6f0;
+}
+
+body.dark .fashion-list li:hover {
+  background-color: #6b4c4c;
 }
 
 /* Navbar */
@@ -66,6 +103,21 @@ body {
   color: #c94e4e;
 }
 
+/* Toggle Button */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+  color: inherit;
+}
+
+#theme-toggle:hover {
+  transform: rotate(20deg);
+}
+
 /* Content */
 main {
   padding-top: 100px;
@@ -84,9 +136,6 @@ main {
   color: #805c5c;
 }
 
-.spacer {
-  height: 1200px; /* for scroll testing */
-}
 .subtitle {
   font-size: 18px;
   color: #7a5c5c;
@@ -115,4 +164,8 @@ main {
 .fashion-list li:hover {
   transform: translateX(6px);
   background-color: #fbe9e1;
+}
+
+.spacer {
+  height: 1200px;
 }
